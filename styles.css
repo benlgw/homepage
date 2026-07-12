@@ -212,7 +212,7 @@ header {
 }
 
 .card section {
-	padding: 0px 25px 10px 25px;
+	padding: 0px 25px 50px 25px;
 }
 
 @media (max-width: 1000px) {
