@@ -19,3 +19,17 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+:root {
+	--header-footer-bg: #1190b1;
+}
+
+.header-background {
+	position: absolute;
+	min-height: 350px;
+	width: 100%;
+	z-index: -1;
+	transform: rotate(-10deg) scaleX(1.5) scaleY(1.5) translateY(-60px);
+
+	background-color: var(--header-footer-bg);
+}
