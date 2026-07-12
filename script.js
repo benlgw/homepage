@@ -29,14 +29,14 @@ function createCard(number) {
 	cardInfoHeader.append(cardInfoIcons);
 
 	const cardIconGithub = document.createElement("img");
-	cardIconGithub.src = "./assets/icons/github-original.svg";
+	cardIconGithub.src = "assets/icons/github-original.svg";
 	cardIconGithub.alt = "github logo";
-	cardInfoIcons.append(cardIconGithub);
+	cardInfoIcons.appendChild(cardIconGithub);
 
 	const cardIconNewTab = document.createElement("img");
-	cardIconGithub.src = "./assets/icons/open-in-new.svg";
-	cardIconGithub.alt = "open in new tab";
-	cardInfoIcons.append(cardIconNewTab);
+	cardIconNewTab.src = "./assets/icons/open-in-new.svg";
+	cardIconNewTab.alt = "open in new tab";
+	cardInfoIcons.appendChild(cardIconNewTab);
 
 	const cardInfoSection = document.createElement("section");
 	cardInfoSection.textContent =
