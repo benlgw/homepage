@@ -162,3 +162,63 @@ header {
 		margin-bottom: 10px;
 	}
 }
+
+/* MAIN */
+.my-work {
+	padding: 50px;
+}
+
+.my-work h1 {
+	margin-bottom: 15px;
+}
+
+.projects {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.projects .card {
+	max-width: calc(90% / 3);
+	box-shadow: 1px 1px 5px 1px;
+	margin-bottom: 25px;
+}
+
+.card .img {
+	aspect-ratio: 4 / 3;
+
+	background-color: red;
+}
+
+.card header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+
+.card header .icons {
+	display: flex;
+	gap: 15px;
+}
+
+.card header img {
+	height: 30px;
+	width: 30px;
+}
+
+.card section {
+	padding: 0px 25px 10px 25px;
+}
+
+@media (max-width: 1000px) {
+	.projects .card {
+		max-width: calc(90% / 2);
+	}
+}
+
+@media (max-width: 635px) {
+	.projects .card {
+		max-width: calc(90% / 1);
+	}
+}
