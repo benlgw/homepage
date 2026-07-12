@@ -174,15 +174,13 @@ header {
 }
 
 .projects {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
 }
 
 .projects .card {
-	max-width: calc(90% / 3);
 	box-shadow: 1px 1px 5px 1px;
-	margin-bottom: 25px;
 }
 
 .card .img {
@@ -211,13 +209,13 @@ header {
 }
 
 @media (max-width: 1000px) {
-	.projects .card {
-		max-width: calc(90% / 2);
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (max-width: 635px) {
-	.projects .card {
-		max-width: calc(90% / 1);
+	.projects {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
