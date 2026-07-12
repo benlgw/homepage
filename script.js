@@ -18,7 +18,7 @@ function createCard(number) {
 	card.append(cardInfo);
 
 	const cardInfoHeader = document.createElement("header");
-	card.append(cardInfoHeader);
+	cardInfo.append(cardInfoHeader);
 
 	const CardInfoTitle = document.createElement("h2");
 	CardInfoTitle.textContent = "Project Name";
